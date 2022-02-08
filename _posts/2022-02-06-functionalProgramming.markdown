@@ -4,6 +4,7 @@ title:  "functional programming"
 categories: Javascript
 ---
 함수형 프로그래밍에 대한 이해
+
 ### Array 알아보기
 ```javascript
     const array = [1,2,3];
