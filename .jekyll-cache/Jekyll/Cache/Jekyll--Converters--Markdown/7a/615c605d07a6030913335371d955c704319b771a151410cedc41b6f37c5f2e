@@ -1,0 +1,10 @@
+I"�<p>함수형 프로그래밍에 대한 이해</p>
+<h3 id="array-알아보기">Array 알아보기</h3>
+<p>```javascript
+    const array = [1,2,3];
+    array[Symbol.iterator] = null; // 이터레이터 null ( 없애면 )
+    for (const a of arr) console.log(a); // 동작하지 않는다.
+    // array 는 Symbol.iterator 라는 메서드를 가지고 있다.
+    array[Symbol.iterator] =&gt; values() { [ native code ] }
+    arr<a href="">Symbol.iterator</a> =&gt; Array Iterator {}</p>
+:ET
