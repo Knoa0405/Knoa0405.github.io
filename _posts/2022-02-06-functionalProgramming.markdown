@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "functional programming"
+date:   2022-02-06 21:03:36 +0530
 categories: Javascript
 ---
 함수형 프로그래밍에 대한 이해
