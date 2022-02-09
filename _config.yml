@@ -46,11 +46,9 @@ plainwhite:
 
 remote_theme: samarsault/plainwhite-jekyll
 # Build settings
-theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
