@@ -28,6 +28,9 @@
         <a href="{{ "/" | relative_url }}">{{ site.plainwhite.name }}</a>
       </h2>
       </div>
+      {%- if site.plainwhite.intro -%}
+      <p class="intro">{{ site.plainwhite.intro }}</p>
+      {%- endif -%}
       {%- if site.plainwhite.tagline -%}
       <p class="tagline">{{ site.plainwhite.tagline }}</p>
       {%- endif -%}
