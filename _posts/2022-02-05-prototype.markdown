@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "prototype"
+date:   2022-02-05 21:03:36 +0530
 categories: Javascript
 ---
 프로토타입이 무엇인지 궁금했습니다. 언뜻 알고 있던 개념을 재정립해봤습니다.

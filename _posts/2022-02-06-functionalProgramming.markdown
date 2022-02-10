@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "functional programming"
+date:   2022-02-06 21:03:36 +0530
 categories: Javascript
 ---
 함수형 프로그래밍에 대한 이해
+
 ### Array 알아보기
 ```javascript
     const array = [1,2,3];
