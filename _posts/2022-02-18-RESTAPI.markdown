@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "OOP (Object Oriented Programming)"
-categories: Programming
+title:  "REST API"
+categories: CSBasic
 ---
 Rest API 가 무엇인지 알아본다.
 
