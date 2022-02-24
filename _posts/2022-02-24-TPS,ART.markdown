@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "TPS(Transaction Per Second), ART(Average Response Time)"
+categories: Testing
+---
+부하 테스트에 대해 알아본다.
+
+### 성능에 문제를 줄 수 있는 것들 - 클라우드
+- 사용자 증가
+- 동시간에 많은 배치 작업 발생
+- 급증하는 DB 참조 > DB LOCK
+- 캐시 문제
+
+### 시스템 성능 지표
+- TPS ( Transaction Per Second ) > 초당 처리량
+- ART ( Average Response Time ) > 평균 응답 시간
+=> 목적지에 도착하는 응답의 평균 처리 시간, 즉, 네트워크를 통한 데이터 왕복 시간
