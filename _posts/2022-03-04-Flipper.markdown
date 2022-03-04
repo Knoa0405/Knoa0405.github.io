@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "What is Flipper?"
+categories: ReactNative
+---
+React Native 디버깅 툴을 배워보자
+
+디버깅 툴은 왜 중요한가?
+- 단순히 콘솔을 통한 디버깅은 지양해야 한다.
+- IDE 를 활용한 디버거를 사용해야하고 똑똑하게 디버깅해야 한다.
+- 개인적으로 디버깅은 개발의 50% 이상을 차지한다고 생각한다.
+
+그럼 왜 이 툴인가?
+1. React Native 로 기본 제공되는 Chrome Debugger 의 경우, 많은 옵션이 없다.
+( 이전에 적용해보니 잘 작동하지 않는 문제가 있다.)
+2. React Native 공식 Support 해주는 디버깅 툴 중 하나이다.
+( 기본 셋업을 해줬을 때 같이 빌드인 되는 라이브러리 중 하나기도 하다. )
+3. React Native 를 만든 페이스북 툴링팀과 협업해 나온 Electron 기반으로 만들어진 툴이다.
