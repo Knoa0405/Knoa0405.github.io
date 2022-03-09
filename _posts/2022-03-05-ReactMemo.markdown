@@ -62,6 +62,26 @@ export default shallowEqual;
 - useMemo 는 메모이제이션된 값을 반환하는 hook 이다.
 - computeExpensiveValue 에 적용하면 성능상 이점이 뚜렷해진다!
 - deps 필수! 없으면 쓸 필요 없음.
+```javascript
+// useMemo 구현 일부
+function useMemo<T>(nextCreate: () => T, deps: Array<mixed> | void | null): T {
+  currentlyRenderingComponent = resolveCurrentlyRenderingComponent();
+  workInProgressHook = createWorkInProgressHook();
+
+  const nextDeps = deps === undefined ? null : deps;
+
+  if (workInProgressHook !== null) {
+    const prevState = workInProgressHook.memoizedState;
+    if (prevState !== null) {
+      if (nextDeps !== null) {
+        const prevDeps = prevState[1];
+        if (areHookInputsEqual(nextDeps, prevDeps)) {
+          return prevState[0];
+        }
+      }
+    }
+  }
+```
 #### 기타 잡생각
 - solid.js => 리액트처럼 memo 이런거 필요없음. https://www.solidjs.com/
 
