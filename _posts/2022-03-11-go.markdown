@@ -10,6 +10,8 @@ categories: Javascript
 
 ### 코드를 값으로...
 
+https://codesandbox.io/s/reduce-go-pipe-r3qxqc
+
 ```javascript
     const go = (...args) => reduce((a, f) => f(a), args);
     const pipe = (f, ...fs) => (...as) => go(f(...as), ...fs);
@@ -35,7 +37,12 @@ categories: Javascript
         products => map(p => p.price, products),
         prices => reduce(add, prices),
         log);
+
+    const curry = f => 
+        (a, ..._) => _.length ? f(a, ..._) : (..._) => f(a, ..._);
     
-    
+    const mult = curry((a, b) => a * b);
+
+    const mult3 = mult(3);
 ```
 
