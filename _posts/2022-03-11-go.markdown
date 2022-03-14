@@ -8,7 +8,7 @@ categories: Javascript
 코드를 값으로 다룰 수 있다.  
 코드의 표현력을 높일 수 있다.  
 
-### 코드를 값으로...
+### 코드를 값으로....
 
 https://codesandbox.io/s/reduce-go-pipe-r3qxqc
 
@@ -45,4 +45,6 @@ https://codesandbox.io/s/reduce-go-pipe-r3qxqc
 
     const mult3 = mult(3);
 ```
+
+### 더 나은 표현 찾기 
 
