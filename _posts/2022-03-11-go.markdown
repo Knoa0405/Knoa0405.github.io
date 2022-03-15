@@ -13,6 +13,15 @@ categories: Javascript
 https://codesandbox.io/s/reduce-go-pipe-r3qxqc
 
 ```javascript
+    const array = [1,2,3];
+
+    const iter = array[Symbol.iterator]();
+
+    iter.next(); // { value : 1 , done : false }
+    iter.next(); // { value : 2 , done : false }
+    iter.next(); // { value : 3 , done : false }
+    iter.next(); // { value : undefined , done : true }
+
     const go = (...args) => reduce((a, f) => f(a), args);
     const pipe = (f, ...fs) => (...as) => go(f(...as), ...fs);
 
