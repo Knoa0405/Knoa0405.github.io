@@ -55,5 +55,9 @@ https://codesandbox.io/s/reduce-go-pipe-r3qxqc
     const mult3 = mult(3);
 ```
 
-### 더 나은 표현 찾기 
+### 더 나은 표현 찾기
 
+```javascript
+    // curry function을 사용해 go, pipe 를 정리
+
+```
