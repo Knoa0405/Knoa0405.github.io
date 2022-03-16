@@ -10,7 +10,7 @@ categories: Javascript
 
 ### 코드를 값으로....
 
-https://codesandbox.io/s/reduce-go-pipe-r3qxqc
+[예제](https://codesandbox.io/s/reduce-go-pipe-r3qxqc)
 
 ```javascript
     const array = [1,2,3];
