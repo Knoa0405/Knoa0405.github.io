@@ -10,7 +10,8 @@ categories: Javascript
 function statement(invoice, plays) {
     let totalAmount = 0;
     let volumeCredits = 0;
-    let result = `청구내역 : ${invoice.customer}`;
+
+    let result = `청구내역 : (고객명 : ${invoice.customer})\n`;
     const format = new Intl.NumberFormat("en-US", {
         style : "currency", currency : "USD",
         minimumFractionDigits : 2 }).format;
@@ -52,3 +53,6 @@ function statement(invoice, plays) {
 }
 
 ```
+
+## 테스트 코드를 만들자 ( 반드시! )
+- 디버깅 역할을 해준다.
