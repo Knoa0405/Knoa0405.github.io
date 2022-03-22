@@ -8,7 +8,7 @@ categories: Javascript
 https://www.youtube.com/watch?v=0yJsvly3nuk
 
 ### 호출스택
-
+- console.trace() 처럼 debugger 를 넣으면 call stack trace 확인 가능
 ### 스코프 체인
 
 ### This
