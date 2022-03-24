@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "인간 JS engine 되기"
+categories: Javascript
+---
+해당 영상을 참조하여 정리할 예정이다.
+
+https://www.youtube.com/watch?v=0yJsvly3nuk
+
+### 호출스택
+
+### 스코프 체인
+
+### This
