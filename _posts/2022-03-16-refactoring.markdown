@@ -24,16 +24,21 @@ function statement(invoice, plays) {
         switch(play.type) {
         case "tragedy" :
             thisAmount = 4000;
+
             if(perf.audience > 30) {
                 thisAmount += 1000 * (perf.audience - 30);
             }
+
             break;
         case "comedy" :
             thisAmount = 3000;
+
             if(perf.audience > 20) {
                 thisAmount += 10000 + 500 * (perf.audience - 20);
             }
+            
             thisAmount += 300 * perf.audience;
+
             break;
         default:
             throw new Error(`알수 없는 장르 : ${play.type}`);
