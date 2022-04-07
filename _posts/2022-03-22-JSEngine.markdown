@@ -35,5 +35,6 @@ https://www.youtube.com/watch?v=0yJsvly3nuk
 
     // 결과값은 이미 resolved 된 Promise 이다.
     
+    Promise.allSettled([]); // 에러 핸들링에 좋다.
 
 ```
