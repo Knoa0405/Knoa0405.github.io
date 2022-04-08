@@ -38,3 +38,42 @@ https://www.youtube.com/watch?v=0yJsvly3nuk
     Promise.allSettled([]); // 에러 핸들링에 좋다.
 
 ```
+
+### Closure
+```javascript
+
+// 함수와 함수 외부 변수와의 관계
+
+function a() {
+    // var i = 0; => 계속 증가 (빠르게 5 도달)
+    // 스코프 내 i 값 고정됨.
+    // 후 setTimeout 작동. ( 5 반복 )
+    for (var i = 0; i < 5; i ++) {
+        setTimeout(() => {
+            console.log(i);
+        }, i * 1000);
+    }
+}
+
+// 해결 방법 ( 옛날 버전 )
+
+function a() {
+    for (var i = 0; i < 5; i ++) {
+        (function(j) {
+            setTimeout(() => {
+                console.log(j);
+            }, i * 1000);
+        })(i);
+    }
+}
+
+// 문제 : var 과 for 의 비동기 콜라보 ()
+// 해결법 : var 유지 -> IIFE ( 즉시 실행 함수 ) 클로저 생성
+// 해결법 : var -> let 으로 변경
+
+// var -> 함수 스코프를 따른다.
+
+
+a();
+
+```
