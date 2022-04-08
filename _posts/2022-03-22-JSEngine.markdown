@@ -60,6 +60,7 @@ function a() {
 function a() {
     for (var i = 0; i < 5; i ++) {
         (function(j) {
+            // 함수 스코프 안에 j 스코프 넣기
             setTimeout(() => {
                 console.log(j);
             }, i * 1000);
@@ -70,9 +71,7 @@ function a() {
 // 문제 : var 과 for 의 비동기 콜라보 ()
 // 해결법 : var 유지 -> IIFE ( 즉시 실행 함수 ) 클로저 생성
 // 해결법 : var -> let 으로 변경
-
 // var -> 함수 스코프를 따른다.
-
 
 a();
 
