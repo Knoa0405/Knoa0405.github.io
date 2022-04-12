@@ -68,11 +68,24 @@ function a() {
     }
 }
 
+
+
+function a() {
+    for (let i = 0; i < 5; i ++) {
+        setTimeout(() => {
+            console.log(i);
+        }, i * 1000);
+    }
+}
+
+
+
 // 문제 : var 과 for 의 비동기 콜라보 ()
 // 해결법 : var 유지 -> IIFE ( 즉시 실행 함수 ) 클로저 생성
 // 해결법 : var -> let 으로 변경
 // var -> 함수 스코프를 따른다.
 
 a();
+
 
 ```
