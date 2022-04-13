@@ -68,8 +68,6 @@ function a() {
     }
 }
 
-
-
 function a() {
     for (let i = 0; i < 5; i ++) {
         setTimeout(() => {
@@ -77,8 +75,6 @@ function a() {
         }, i * 1000);
     }
 }
-
-
 
 // 문제 : var 과 for 의 비동기 콜라보 ()
 // 해결법 : var 유지 -> IIFE ( 즉시 실행 함수 ) 클로저 생성
