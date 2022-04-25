@@ -40,6 +40,7 @@ https://www.youtube.com/watch?v=0yJsvly3nuk
 ```
 
 ### Closure
+
 ```javascript
 
 // 함수와 함수 외부 변수와의 관계
@@ -83,6 +84,22 @@ function a() {
 // var 쓰지말자.
 
 a();
+
+
+```
+
+### Promise 
+
+```javascript
+
+async function getData () {
+    const response = await axios.get('url');
+    ...
+
+    return response;
+}
+
+const data = await getData();
 
 
 ```
