@@ -101,5 +101,43 @@ async function getData () {
 
 const data = await getData();
 
+async function b() {
+    const p1 = delay1(3000);
+    const p2 = delay2(5000);
+
+    await Promise.all([p1,p2]);
+    await delayP(9000);
+}
+
+new Promise((resolve, reject) => {
+    const p1 = delay1(3000);
+    const p2 = delay2(5000);
+
+    return Promise.all([p1,p2]);
+}).then(() => {
+    return delayP(9000)
+}).then(() => {
+
+});
+
+async function c() {
+    const a = await 1;
+    const b = await 2;
+    return a + b;
+}
+
+(function() {
+    let a;
+    let b;
+    return Promise.resolve(1)
+        .then((result) => {
+            a = result;
+            return 2;
+        })
+        .then((result) => {
+            b = result;
+            return a + b;
+        });
+})();
 
 ```
