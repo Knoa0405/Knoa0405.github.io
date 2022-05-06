@@ -40,6 +40,7 @@ https://www.youtube.com/watch?v=0yJsvly3nuk
 ```
 
 ### Closure
+
 ```javascript
 
 // 함수와 함수 외부 변수와의 관계
@@ -68,11 +69,75 @@ function a() {
     }
 }
 
+function a() {
+    for (let i = 0; i < 5; i ++) {
+        setTimeout(() => {
+            console.log(i);
+        }, i * 1000);
+    }
+}
+
 // 문제 : var 과 for 의 비동기 콜라보 ()
 // 해결법 : var 유지 -> IIFE ( 즉시 실행 함수 ) 클로저 생성
 // 해결법 : var -> let 으로 변경
 // var -> 함수 스코프를 따른다.
+// var 쓰지말자.
 
 a();
+
+
+```
+
+### Promise 
+
+```javascript
+
+async function getData () {
+    const response = await axios.get('url');
+    ...
+
+    return response;
+}
+
+const data = await getData();
+
+async function b() {
+    const p1 = delay1(3000);
+    const p2 = delay2(5000);
+
+    await Promise.all([p1,p2]);
+    await delayP(9000);
+}
+
+new Promise((resolve, reject) => {
+    const p1 = delay1(3000);
+    const p2 = delay2(5000);
+
+    return Promise.all([p1,p2]);
+}).then(() => {
+    return delayP(9000)
+}).then(() => {
+
+});
+
+async function c() {
+    const a = await 1;
+    const b = await 2;
+    return a + b;
+}
+
+(function() {
+    let a;
+    let b;
+    return Promise.resolve(1)
+        .then((result) => {
+            a = result;
+            return 2;
+        })
+        .then((result) => {
+            b = result;
+            return a + b;
+        });
+})();
 
 ```
