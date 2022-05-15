@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "TCP,IP"
+categories: Network
+---
+TCP, IP 에 대해 알아본다.
+
+서버 한대와 클라이언트가 연결되어 있다고 가정
+TCP/IP 연결을 하게 된다.
+3-way-handshake

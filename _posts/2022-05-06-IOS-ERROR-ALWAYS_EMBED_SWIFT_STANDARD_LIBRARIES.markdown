@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "IOS-WARNING-ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES"
-categories: Javascript
+categories: ios/swift
 ---
 ```shell
 The `poomang [Debug]` target overrides the `ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES` build setting defined in `Pods/Target Support Files/Pods-poomang/Pods-poomang.debug.xcconfig'. This can lead to problems with the CocoaPods installation
