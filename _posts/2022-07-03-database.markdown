@@ -14,5 +14,6 @@ categories: CSBasic
 - 학생이라는 Entity Type 이 있고 그 안에 여러 Attribute 가 있을 수 있다.
 
 ### RelationShip ( 관계 )
+- Entity 간의 관계
 
 ### Constraint ( 제약 조건 )
