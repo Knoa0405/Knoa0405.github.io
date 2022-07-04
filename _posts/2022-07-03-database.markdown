@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "DataBase"
+categories: CSBasic
+---
+데이터베이스 모델링 이해
+
+### Entity - 저장 대상
+- Entity Type 과 혼용해서 사용된다.
+
+#### Entity / Entity Type 은 엄밀히 말하면 다름
+#### 일반적으로 Entity 로 뭉뚱그려 말함.
+- 학생, 수업, 교수 -> 각각 하나의 대상 (row) => Entity
+- 학생이라는 Entity Type 이 있고 그 안에 여러 Attribute 가 있을 수 있다.
+
+### RelationShip ( 관계 )
+- Entity 간의 관계
+
+### Constraint ( 제약 조건 )
