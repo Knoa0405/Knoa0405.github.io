@@ -25,6 +25,6 @@ USER <=> PRODUCT
 ### 하나의 값으로 표현할 수 있는 명사는 attribute 후보다.
 ### 단, 여러 값을 가질 수 있다면 entity 후보다.
 
-Cardinality
+### Cardinality
 
 일대일 , 일대다, 다대다
