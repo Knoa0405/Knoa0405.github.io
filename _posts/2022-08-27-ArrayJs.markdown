@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Array in JS"
+categories: Javascript
+---
+Array 다루기
+
+```javascript
+  const array = [1, 2, 3];
+
+  console.log(array.length); // 3
+
+  array.length = 0;
+
+  console.log(array.length); // 0
+
+  const array2 = [2, 3, 4];
+  
+  console.log(array2.length); // 3
+
+  array2.length = 10;
+
+  console.log(array2); // [2, 3, 4, , , , , , , ,];
+```
+
+### 배열 요소 접근하기
+
+```javascript
+  const array = [1,2,3];
+
+  function operateTime([firstInput, secondInput],) {
+    
+  }
+```
+
+### 배열 메서드 체이닝 활용하기
+
+```javascript
+
+const suffixWon = (price) => price + '원';
+  
+const getWonPrice(priceList) {
+  return priceList.filter(isOverThousand).sort(ascendingList).map(suffixWon);
+}
+
+const result = getWonPrice(price);
+
+console.log(result); // [2000원, 3000원, 4000원, 5000원];
+
+
+```
+
+
