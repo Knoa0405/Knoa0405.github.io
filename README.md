@@ -15,6 +15,9 @@ $ Password : your password
 $ (Window) bundle exec jekyll serve
 ```
 
+### Add Posts
+$ generate.sh "${title}" "${category}"
+
 ### License
 The theme is available as open source under the terms of the MIT License.
 
